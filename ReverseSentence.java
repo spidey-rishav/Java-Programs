@@ -7,15 +7,16 @@ public class ReverseSentence {
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
         String word = br.readLine();
-        String[] input = word.split("\\s+");
+        String[] input = word.trim().split("\\s+");
         Stack<String> str = new Stack<>();
 
         for(int i=0; i<input.length; i++){
             str.push(input[i]);
         }
         while(!str.isEmpty()){
-            System.out.print(str.pop() + " ");
+            bw.write(str.pop() + " ");
         }
-        System.out.println();
+        bw.newLine();
+        bw.flush();
     }
 }
