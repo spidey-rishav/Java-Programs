@@ -4,7 +4,7 @@ public class LinkedList {
     static class Node{
         int data;
         Node next;
-        public Node(int data){
+        Node(int data){
             this.data = data;
             this.next = null;
         }
@@ -165,13 +165,61 @@ public class LinkedList {
         System.out.println("null");
     }
 
+    //slow-fast Approach
+    public static Node findMide(Node head){
+        Node slow = head;
+        Node fast = head;
+
+        while (fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+
+        return slow;
+    }
+
+    public static boolean checkPalindrome(){
+        if(head == null || head.next == null){
+            return true;
+        }
+        //step 1 - find mid
+        Node midNode = findMide(head);
+
+        //step 2 - reverse 2nd half
+        Node prev = null;
+        Node curr = midNode;
+        Node next;
+
+        while (curr != null){
+            next = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = next;
+        }
+
+        Node rightHead = prev;
+        Node leftHead = head;
+
+        //step 3 - check left half and right half
+        while (rightHead != null){
+            if(leftHead.data != rightHead.data){
+                return false;
+            }
+            leftHead = leftHead.next;
+            rightHead = rightHead.next;
+        }
+        return true;
+    }
+
     public static void main(String[] args){
         LinkedList ll = new LinkedList();
-        ll.addFirst(1);
         ll.addFirst(2);
-        ll.addLast(3);
-        ll.addLast(4);
-        ll.add(2, 5);
+        ll.addFirst(1);
+        ll.addLast(2);
+        ll.addLast(1);
+        //1 -> 2 -> 2 -> 1
+//        ll.add(2, 5);
+
         printll(head);
 //        System.out.println(ll.removeFirst());
 //        System.out.println(ll.removeLast());
@@ -185,7 +233,8 @@ public class LinkedList {
 //        reverseLL();
 //        printll(head);
 
-        removeFromEnd(3);
-        printll(head);
+//        removeFromEnd(3);
+//        printll(head);
+        System.out.println(checkPalindrome());
     }
 }
