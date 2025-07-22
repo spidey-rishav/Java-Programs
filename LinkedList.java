@@ -233,8 +233,8 @@ public class LinkedList {
 //        reverseLL();
 //        printll(head);
 
-//        removeFromEnd(3);
-//        printll(head);
-        System.out.println(checkPalindrome());
+        removeFromEnd(3);
+        printll(head);
+//        System.out.println(checkPalindrome());
     }
 }
