@@ -1,7 +1,7 @@
 import java.util.*;
 
 public class LinkedList {
-    static class Node{
+    class Node{
         int data;
         Node next;
         Node(int data){
