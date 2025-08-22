@@ -1,4 +1,4 @@
-import java.util.*;
+package packageone;
 
 public class LinkedList {
     class Node{
@@ -154,7 +154,7 @@ public class LinkedList {
 
     public static void printll(Node head){
         if(head == null){
-            System.out.println("LinkedList is empty");
+            System.out.println("packageone.LinkedList is empty");
             return;
         }
         Node dummy = head;

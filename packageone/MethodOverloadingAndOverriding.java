@@ -1,5 +1,4 @@
-import java.util.*;
-import java.io.*;
+package packageone;
 
 public class MethodOverloadingAndOverriding {
     public static void main(String[] args){

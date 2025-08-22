@@ -1,3 +1,5 @@
+package packageone;
+
 class HashMap{
     int ar[];
     int state[];
@@ -48,7 +50,7 @@ class HashMap{
 }
 public class HashMapping {
     public static void main(String[] args){
-//        HashMap<Integer> map = new HashMap<Integer>(5);
+//        packageone.HashMap<Integer> map = new packageone.HashMap<Integer>(5);
 
 //        map.insert(5);
 //        map.insert(2);

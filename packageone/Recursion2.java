@@ -1,7 +1,9 @@
+package packageone;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.*;
+
 public class Recursion2 {
 //    public static boolean sortedArray(int[] ar, int n, int idx){ //Time Complexity -> O(n), Space Complexity -> O(n)
 //        if(idx == n-1){

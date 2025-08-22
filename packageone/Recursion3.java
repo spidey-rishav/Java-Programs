@@ -1,5 +1,6 @@
+package packageone;
+
 import java.io.*;
-import java.util.*;
 
 public class Recursion3 {
     public static int xPown(int x, int n){

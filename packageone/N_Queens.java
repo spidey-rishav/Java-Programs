@@ -1,4 +1,4 @@
-import java.util.*;
+package packageone;
 
 public class N_Queens {
     public static boolean isSafe(char[][] board, int row, int col){

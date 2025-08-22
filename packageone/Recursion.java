@@ -1,4 +1,5 @@
-import java.util.*;
+package packageone;
+
 public class Recursion {
     public static void printNumber(int n){
         if(n==1){

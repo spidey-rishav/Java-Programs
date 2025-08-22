@@ -1,4 +1,4 @@
-import java.util.*;
+package packageone;
 
 public class FirstLetterToUpperCase {
     public static String toUpperLetter (String str){

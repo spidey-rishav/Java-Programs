@@ -1,4 +1,4 @@
-import java.util.*;
+package packageone;
 
 public class ClassesAndObject {
     public static void main(String[] args){
@@ -49,7 +49,7 @@ class Pen{
 }
 
 
-//class Student{
+//class packageone.Student{
 //    String name;
 //    int age;
 //    float percentage;

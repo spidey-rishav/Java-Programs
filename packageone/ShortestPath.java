@@ -1,4 +1,4 @@
-import java.util.*;
+package packageone;
 
 public class ShortestPath {
     public static float getShortestPath(String path){

@@ -1,5 +1,5 @@
-import java.nio.Buffer;
-import java.util.*;
+package packageone;
+
 import java.io.*;
 
 public class RemoveDuplicates {

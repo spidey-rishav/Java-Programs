@@ -1,3 +1,5 @@
+package packageone;
+
 public class Constructor {
     public static void main(String[] args){
         Student s1 = new Student();
@@ -16,8 +18,8 @@ public class Constructor {
         }
 //        System.out.println(s1.name);
 
-//        Student s2 = new Student("Rishav");
-//        Student s3 = new Student(21);
+//        packageone.Student s2 = new packageone.Student("Rishav");
+//        packageone.Student s3 = new packageone.Student(21);
 
 
     }
@@ -30,7 +32,7 @@ class Student {
     int marks[];
 
     //shallow copy constructor
-//    Student(Student s1){
+//    packageone.Student(packageone.Student s1){
 //        marks = new int[3];
 //        this.name = s1.name;
 //        this.roll = s1.roll;

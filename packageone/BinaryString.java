@@ -1,5 +1,6 @@
+package packageone;
+
 import java.io.*;
-import java.util.*;
 
 public class BinaryString {
     public static void binaryString(int n, int lastPlace, String word){

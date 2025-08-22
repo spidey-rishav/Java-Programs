@@ -1,7 +1,8 @@
-import java.util.*;
+package packageone;
+
 public class Inheritance {
     public static void main(String[] args){
-//        Fish shark = new Fish();
+//        packageone.Fish shark = new packageone.Fish();
 //        shark.eat();
 
 //        Dog simba = new Dog();
@@ -20,7 +21,7 @@ public class Inheritance {
 //Base Class
 class Animal{
     Animal(){
-        System.out.println("Animal constructor called"); //to see the use of Super keyword in Bird Class
+        System.out.println("packageone.Animal constructor called"); //to see the use of Super keyword in packageone.Bird Class
     }
     String color;
     void eat(){
@@ -31,7 +32,7 @@ class Animal{
     }
 }
 
-//Derived Class || subClass of Animal || also known as child Class
+//Derived Class || subClass of packageone.Animal || also known as child Class
 class Fish extends Animal{
     int fins;
 
@@ -50,15 +51,15 @@ class Mammals extends Animal{
 
 class Bird extends Animal{
     Bird(){
-        super(); // to access the properties of the parent class which is "Animal" here.
-        System.out.println("Bird Constructor called");
+        super(); // to access the properties of the parent class which is "packageone.Animal" here.
+        System.out.println("packageone.Bird packageone.Constructor called");
     }
     void fly(){
         System.out.println("Can fly...");
     }
 }
 
-//class Dog extends Mammals{
+//class Dog extends packageone.Mammals{
 //    String breed;
 //    boolean pet;
 //}

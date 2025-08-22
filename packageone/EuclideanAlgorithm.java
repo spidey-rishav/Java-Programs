@@ -1,4 +1,5 @@
-import java.io.BufferedReader;
+package packageone;
+
 import java.util.*;
 public class EuclideanAlgorithm {
     public static int gcd(int a, int b){

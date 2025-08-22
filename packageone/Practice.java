@@ -1,4 +1,4 @@
-import java.util.*;
+package packageone;
 
 //public class Practice {
 //    public static void main(String[] args){
@@ -119,7 +119,7 @@ import java.util.*;
 
 //import java.io.*;
 //
-//class Main{
+//class packageone.Main{
 //    public static void year(int n){
 //        for(int i=0; i<=100; i++){
 //            for(int j=0; j<=100; j++){
@@ -145,7 +145,6 @@ import java.util.*;
 //}
 
 
-import java.util.*;
 import java.io.*;
 
 

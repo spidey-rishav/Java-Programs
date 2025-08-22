@@ -1,4 +1,4 @@
-import java.util.*;
+package packageone;
 
 public class LinkedList2 {
     static class Node{

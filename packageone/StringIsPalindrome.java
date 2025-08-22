@@ -1,3 +1,5 @@
+package packageone;
+
 import java.util.*;
 public class StringIsPalindrome {
     public static boolean isPalindrome(String str){

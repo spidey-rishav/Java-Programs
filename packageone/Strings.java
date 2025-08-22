@@ -1,4 +1,4 @@
-import java.util.*;
+package packageone;
 
 public class Strings {
     public static void main(String[] args){

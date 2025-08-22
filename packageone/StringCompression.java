@@ -1,4 +1,4 @@
-import java.util.*;
+package packageone;
 
 public class StringCompression {
     public static String stringCompress(String str){

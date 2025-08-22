@@ -1,5 +1,6 @@
+package packageone;
+
 import java.io.*;
-import java.util.*;
 
 public class Permutation {
     public static void permutation(String str, String ans){
